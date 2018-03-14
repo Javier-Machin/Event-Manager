@@ -6,4 +6,4 @@ outputs a customized thank you html page and outputs in console the best day and
 
 To use it, edit event_manager.rb inside the folder lib with your Google's API key and just run that file
 
-/lib$ ruby event_manager.rb
+/lib/$ ruby event_manager.rb
