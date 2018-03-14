@@ -1,6 +1,6 @@
 # Event-Manager
 -----------------------------------------------------------------------
-Use personal information from a database to request political representants using Google's API, 
+Use personal information from a database to request political representatives using Google's API, 
 
 outputs a customized thank you html page and outputs in console the best day and hour to target the registered people with ads.
 
