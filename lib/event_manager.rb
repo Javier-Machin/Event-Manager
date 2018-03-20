@@ -11,12 +11,10 @@ end
 def clean_phone_numbers(phone_number)
   phone_number = phone_number.to_s.gsub(/[^0-9]/, "")
 
-  if phone_number.length < 10
+  if phone_number.length < 10 || phone_number.length >= 11
   	phone_number = "1234567890"
   elsif phone_number.length == 11 && phone_number[0] == 1
   	phone_number = phone_number[1..10]
-  elsif phone_number.length >= 11
-  	phone_number = "1234567890"
   else
   	phone_number
   end
@@ -46,10 +44,6 @@ def save_thank_you_letters(id, form_letter)
   File.open(filename, 'w') do |file|
     file.puts form_letter
   end
-end
-
-def clean_registration_time(registration)
-  
 end
 
 def clean_registration_date(registration)
